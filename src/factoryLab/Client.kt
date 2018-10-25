@@ -37,8 +37,6 @@ fun getAbility(): Ability{
         2. Стрельба
         3. Ловкость
     """.trimIndent())
-//    sc = Scanner(System.`in`)
-//    answer = sc.nextLine()
     val abilityFactory = when(inputString){
         "2" -> ShootingAbilityFactory()
         "3" -> JumpingAbilityFactory()
