@@ -7,6 +7,7 @@ object CouriersSystem{
     fun addCourier(courier: Courier){
         if(count < maxCount)
             couriersList.add(courier)
+        count++
     }
     fun show(){
         println("Список курьеров и их текущие задания:")
