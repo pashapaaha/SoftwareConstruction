@@ -2,8 +2,8 @@ package singletonLab
 import factoryLab.inputString
 
 fun main(args: Array<String>) {
-    var flag = true
-    while(flag){
+
+    label@while(true){
         println("""
         Выберите действие:
         1. Добавить курьера
@@ -13,7 +13,7 @@ fun main(args: Array<String>) {
         when(inputString){
             "1" -> insert()
             "2" -> outPut()
-            else -> flag = false
+            else -> break@label
         }
     }
 }
