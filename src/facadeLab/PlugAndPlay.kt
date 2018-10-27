@@ -13,7 +13,6 @@ class PlugAndPlay(device: Device) {
     }
 
     fun useDevice(){
-
         driver.useDevice()
     }
 }
