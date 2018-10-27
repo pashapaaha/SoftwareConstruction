@@ -4,19 +4,19 @@ sealed class Device {
     abstract fun use()
 
 
-    class USBDevice : Device() {
+    object USBDevice : Device() {
         override fun use() {
             println("USB предоставляет информацию")
         }
     }
 
-    class PrinterDevice : Device() {
+    object PrinterDevice : Device() {
         override fun use() {
             println("Принтер печатает текст")
         }
     }
 
-    class MouseDevice : Device() {
+    object MouseDevice : Device() {
         override fun use() {
             println("Мышь управляет курсором")
         }
