@@ -1,7 +1,7 @@
 package singletonLab
 
 object CouriersSystem{
-    private val maxCount = 15
+    private const val maxCount = 15
     private var count = 0
     private val couriersList = mutableListOf<Courier>()
     fun addCourier(courier: Courier){
